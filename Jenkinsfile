@@ -1,10 +1,10 @@
 pipeline {
-	agent none 
+	agent none //1
 	stages {
-	   stage('Build') {  
+	   stage('Build') {  //2
  		agent {
 		  docker {
- 			image 'python:2-alpine' 
+ 			image 'python:2-alpine' //3 
  		      }
  		}
  		steps {
